@@ -1,0 +1,14 @@
+interface:
+  display_name: "OpenAI Docs"
+  short_description: "Reference docs, choose models, and migrate OpenAI API integrations"
+  icon_small: "./assets/openai-small.svg"
+  icon_large: "./assets/openai.png"
+  default_prompt: "Use OpenAI Docs for official docs lookup, model selection, model migration, and prompt-upgrade work."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "openaiDeveloperDocs"
+      description: "OpenAI Developer Docs MCP server"
+      transport: "streamable_http"
+      url: "https://developers.openai.com/mcp"
